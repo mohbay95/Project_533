@@ -34,5 +34,5 @@ class TestSnakeAndLadder(unittest.TestCase):
 
     def test_ladders_positions(self):
         """Test if the ladders are correctly placed on the board."""
-        self.assertIn(1, self.snakes_and_ladders.get_ladders(), "Ladder at position 1 should exist")
-        self.assertEqual(self.snakes_and_ladders.get_ladders()[1], 38, "Ladder at position 1 should lead to position 38")
+        self.assertIn(4, self.snakes_and_ladders.get_ladders(), "Ladder at position 4 should exist")
+        self.assertEqual(self.snakes_and_ladders.get_ladders()[4], 14, "Ladder at position 4 should lead to position 14")
