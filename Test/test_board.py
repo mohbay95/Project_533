@@ -11,6 +11,7 @@ class TestBoard(unittest.TestCase):
     def setUpClass(cls):
         """Called once before any tests in this class are executed."""
         print("\nSetting up the test class for Board tests...")
+        
 
     @classmethod
     def tearDownClass(cls):
@@ -34,10 +35,16 @@ class TestBoard(unittest.TestCase):
     def test_initial_board_size(self):
         """Test the initial size of the board."""
         self.assertEqual(self.board.get_size(), 100, "Board size should be 100 by default")
+        self.assertEqual(len(self.board.display_board), 100, "Board representation must have 100 squares.")
+        self.assertTrue(all(cell == '⬜' for cell in self.board.display_board), "Board must be empty at the start.")
+        self.assertNotEqual(self.board.size, 50, "Board size should not be 50 by default.")
 
     def test_both_players_same_position(self):
         """Test if both players are displayed correctly at the same position."""
         self.player_positions = [1, 1]  # Both players at position 1
         self.board.print_board_with_emojis(self.player_positions, self.snakes, self.ladders)
         display_board = self.board.get_display_board()
-        self.assertEqual(display_board[0], '🔴')  # Both players at position 1
+        self.assertEqual(display_board[0], '🔴', "Both players at position 1")  # Both players at position 1
+        self.assertNotEqual(display_board[1], '🔵', "No player should be in position 2.")
+        self.assertNotEqual(display_board[0], '🟡', "Position 1 should not be marked only for player 2.")
+        self.assertTrue('🔴' in display_board, "The board should show the icon for both players together.")
