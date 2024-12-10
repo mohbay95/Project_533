@@ -10,3 +10,4 @@ install:
   
 script:
   - python test_board.py
+  - python test_player.py
