@@ -13,7 +13,7 @@ script:
   - python test_board.py
   - python test_player.py
   - python test_game.py
-  - python test_snakeandladder.py
+  - python test_snakeandladdder.py
   - python test_util.py
  
   
