@@ -4,4 +4,4 @@ python:
   - "3.5"
 # command to run tests
 script:
-  - python Test/test_board.py
+  - python test_board.py
