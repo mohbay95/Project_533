@@ -3,5 +3,9 @@ python:
   - "3.4"
   - "3.5"
 # command to run tests
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get -y install art
 script:
   - python test_board.py
