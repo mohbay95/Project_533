@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/mohbay95/Project_533.svg?token=yEpB9SCgzfFwNhkKRgNZ&branch=main)](https://app.travis-ci.com/mohbay95/Project_533)
+
 # Snake and Ladder Game
 
 ## Overview
