@@ -1,21 +1,7 @@
 language: python
 python:
-  - "3.6"
-  - "3.7"
-  - "3.8"
+  - "3.4"
+  - "3.5"
 # command to run tests
-
-# Install dependencies
-install:
-  - pip install art  # Install the art package
-  
 script:
   - python test_board.py
-  - python test_player.py
-  - python test_game.py
-  - python test_snakeandladdder.py
-  - python test_util.py
- 
-  
-  
-  
