@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# Optional settings for setuptools
+
+[tool.setuptools.sdist]
+# Include or exclude specific files in the source distribution
+# By default, uses MANIFEST.in if present
+
+[tool.setuptools.metadata]
+name = "snakes-and-ladders"
+version = "0.1.0"
+description = "A snakes and ladders game package"
+author = "Your Name"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
