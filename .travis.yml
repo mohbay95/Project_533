@@ -6,7 +6,7 @@ python:
  
  
  install:
-  - pip install art  # Install the art package
+   - pip install art  # Install the art package
   
   
 # command to run tests
